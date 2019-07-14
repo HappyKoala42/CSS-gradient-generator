@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: linear-gradient(to right, rgb(197, 67, 99), rgb(194, 161, 250));
+    transform: translateY(100%);
+    opacity: 0;
+    animation: fadein .7s .5s;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font: 600 3.2em 'Pacifico', cursive;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+@keyframes fadein {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-15%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h3 {
+    font: 900 1em sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: .01em;
+}
+
+input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    outline-color: red;
+}
